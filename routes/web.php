@@ -20,4 +20,4 @@ Route::get('create_complete','Acount\AcountController@create_complete');
 Route::get('login','Login\LoginController@login');
 Route::get('forget_password',function(){abort('550');});
 
-Route::get('dashboard','Dashboard\dashboardController@dashboard');
+Route::get('dashboard','Dashboard\DashboardController@dashboard');
