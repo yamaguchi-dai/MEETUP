@@ -15,4 +15,9 @@ Route::get('/', function () {
     return view('Login/login');
 });
 
+Route::get('create_acount','Acount\AcountController@create');
+Route::get('create_complete','Acount\AcountController@create_complete');
 Route::get('login','Login\LoginController@login');
+Route::get('forget_password',function(){abort('550');});
+
+Route::get('dashboard','Dashboard\dashboardController@dashboard');

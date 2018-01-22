@@ -1,9 +1,9 @@
 /**ヘッダー */
-body nav{
+body nav.header{
     height: 225px;
         
 }
-body nav div.nav-wrapper a{
+body nav.header div.nav-wrapper a{
     font-size: 110px;
     margin-top: 75px;
 }

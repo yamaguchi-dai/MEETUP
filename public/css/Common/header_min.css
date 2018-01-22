@@ -1,0 +1,12 @@
+/**ヘッダー */
+.header-min{
+    height: 110px;
+        
+}
+.header-min div{
+    margin-top: 10px;
+}
+
+.header-min i{
+    font-size: 90px;
+}

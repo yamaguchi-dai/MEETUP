@@ -5,15 +5,15 @@ namespace App\Exceptions;
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
-class Handler extends ExceptionHandler
-{
+class Handler extends ExceptionHandler {
+
     /**
      * A list of the exception types that are not reported.
      *
      * @var array
      */
     protected $dontReport = [
-        //
+            //
     ];
 
     /**
@@ -34,8 +34,7 @@ class Handler extends ExceptionHandler
      * @param  \Exception  $exception
      * @return void
      */
-    public function report(Exception $exception)
-    {
+    public function report(Exception $exception) {
         parent::report($exception);
     }
 
@@ -46,8 +45,14 @@ class Handler extends ExceptionHandler
      * @param  \Exception  $exception
      * @return \Illuminate\Http\Response
      */
-    public function render($request, Exception $exception)
-    {
+    public function render($request, Exception $exception) {
+        if ($this->isHttpException($exception)) {
+              if($exception->getStatusCode() == 550) {
+                   return response()->view('Error.error', ['title' => '工事中', 'message' => '利用していただこうとした機能はまだ開発途中です。もうしばらくお待ちください']);
+              }
+           
+        }
         return parent::render($request, $exception);
     }
+
 }

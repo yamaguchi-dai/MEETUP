@@ -6,20 +6,14 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
         <link href="/css/Common/overWriteMaterialize.css" type="text/css" rel="stylesheet" >
-        <link href="/css/Common/common.css" type="text/css" rel="stylesheet" >
+        <link href="/css/Common/header.css" type="text/css" rel="stylesheet" >
+        <link href="/css/Common/header_min.css" type="text/css" rel="stylesheet" >
         @stack('css')
 
     </head>
     <body>
-        <nav class="red lighten-1" role="navigation">
-            <div class="nav-wrapper">
-                <a href="/" class="brand-logo center">MEETUP</a>
-                <ul id="nav-mobile" class="left">
-                    <li></li>
-                </ul>
-            </div>
-        </nav>
-
+        @yield('nav')
+       
         <!-- メインコンテンツエリア -->
         <div class="container">
             @yield('content')
