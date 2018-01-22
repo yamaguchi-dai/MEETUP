@@ -1,4 +1,4 @@
-@extends('common.app')
+@extends('Common.app')
 @section('title', '')
 @push('scripts')
 <script></script>
