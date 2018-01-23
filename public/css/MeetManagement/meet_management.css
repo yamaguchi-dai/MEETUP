@@ -32,3 +32,11 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .row.card h5{
     line-height: 67px;
 }
+
+.row.card .row{
+    margin-bottom: 0px;
+}
+
+.rate{
+    width: 15px;
+}

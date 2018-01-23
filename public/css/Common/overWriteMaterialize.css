@@ -29,9 +29,3 @@ body .container a.btn{
 }
 
 
-
-body .container input[type="text"],
-body .container input[type="password"]{
-    height: 10rem;
- font-size: 80px  ; 
-}

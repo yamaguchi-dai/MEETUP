@@ -4,6 +4,7 @@
 <script></script>
 @endpush
 @push('css')
+<link href="/css/Account/create_account.css" type="text/css" rel="stylesheet" >
 @endpush
 @section('nav')
 @include('Common.header')

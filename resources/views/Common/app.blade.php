@@ -21,6 +21,7 @@
         <!--  Scripts-->
         <script src="/js/jquery-3.3.1.js"></script>
         <script src="/js/materialize.js"></script>
+        <script src="/js/Common/common.js"></script>
         @stack('scripts')
     </body>
 </html>
