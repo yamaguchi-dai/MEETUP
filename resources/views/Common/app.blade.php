@@ -1,7 +1,7 @@
 <html lang="{{ app()->getLocale() }}">
     <head>
         <title>@yield('title')&nbsp;|&nbsp;MEETUP</title
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
         <!-- CSS  -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
