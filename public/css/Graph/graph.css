@@ -1,0 +1,13 @@
+.card{
+    border-radius: 45px;
+}
+.card span{
+    line-height: 40px;
+    height: 40px;
+    font-size: 50px;
+}
+
+.card span.card-title i.material-icons{
+    font-size: 60px;
+    line-height: 45px;
+}
