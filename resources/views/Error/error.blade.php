@@ -10,7 +10,7 @@
 @endsection
 @section('content')
 <div class="row center">
-    <i class="red-text material-icons">favorite_border</i>
+    <i class="red-text material-icons large">favorite_border</i>
     <div class=" col s12">
         <h5>{{$title}}</h5>
     </div>

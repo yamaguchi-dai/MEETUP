@@ -22,3 +22,4 @@ Route::get('forget_password',function(){abort('550');});
 
 Route::get('dashboard','Dashboard\DashboardController@dashboard');
 Route::get('meet_management','MeetManagement\MeetManagementController@meet_management');
+Route::get('graph','Graph\GraphController@graph');
